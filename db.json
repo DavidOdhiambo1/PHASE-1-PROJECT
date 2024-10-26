@@ -1,0 +1,52 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "name": "The Hub",
+      "location": " Karen estate Opp CoopBank",
+      "image": "https://media.istockphoto.com/id/1990444472/photo/scandinavian-style-cozy-living-room-interior.jpg?s=612x612&w=0&k=20&c=qgzrs_4vKDrOVo6gVc0EVb9-PziE-REbV9DcM5ZAfig=",
+      "availability": "1st October",
+      "price": 3700,
+      "description": "One bedroom house with parking, swimming pool and gym",
+      "contactPerson": "Mato",
+      "contactNumber": "0123456789",
+      "userComments": "The house is cool, spacious and clean"
+    },
+    {
+      "id": "2",
+      "name": "The Upsalla apartments",
+      "location": "108 Street",
+      "image": "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJvb21zfGVufDB8fDB8fHww",
+      "availability": "4th - 5th November",
+      "price": 3000,
+      "description": "A two bedroom house",
+      "contactPerson": "Mary",
+      "contactNumber": "0133456789",
+      "userComments": "I love the appliances provided"
+    },
+    {
+      "id": "0382",
+      "name": "Tripple C",
+      "location": "karen",
+      "image": "https://media.istockphoto.com/id/1482804681/photo/modern-apartment-buildings.webp?a=1&b=1&s=612x612&w=0&k=20&c=VR7c_e5WwGx-fshEBCjnGyin9gG6WitG9LuMjwpTtJo=",
+      "availability": "5th nov",
+      "price": "5000",
+      "description": "one-bedroom",
+      "contactPerson": "peter",
+      "contactNumber": "0711111111",
+      "userComments": "The security is wanting"
+    },
+    {
+      "id": "a832",
+      "name": "Comfort Apartments",
+      "location": "Downtown",
+      "image": "https://img.freepik.com/free-photo/modern-residential-district-with-green-roof-balcony-generated-by-ai_188544-10276.jpg?semt=ais_hybrid",
+      "availability": "1st nov - 30th nov",
+      "price": "5000",
+      "description": "one-bedroom",
+      "contactPerson": "David",
+      "contactNumber": "0700000000",
+      "userComments": ""
+    }
+  ]
+}
