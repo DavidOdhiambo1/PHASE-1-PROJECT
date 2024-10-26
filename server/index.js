@@ -21,34 +21,6 @@ function handleNewProperty (e) {
     listnewProperty(newProperty)
 }
 
-// function propertiesListed (property) {
-//     const li = document.createElement("li")
-//     li.innerText = property.name.toUpperCase()
-//     document.querySelector("#properties").appendChild(li)
-//     renderProperty(property)
-    
-// }
-
-function createRecommendationObj (property){
-    //console.log(property)
-     commentsObject = {
-        id: property.id,
-        name: property.name,
-        comment1: "",
-        comment2: "",
-        comment3: ""
-    }
-    //console.log(commentsObject)
-    // fetch ("http://localhost:3000/recommendations", {
-    //     method: 'POST',
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     },
-    //     body: JSON.stringify(commentsObject)
-    // })
-    // .then(res => res.json())
-    // .then(data => console.log(data))
-}
 
 function renderProperty (property){
     const card = document.createElement("li")
@@ -101,7 +73,7 @@ function renderProperty (property){
     deleteButton.textContent = 'Delist property'
     div3.appendChild(deleteButton)
 
-    //create commentsObject
+    //update comments
     card.querySelector('#newComment').addEventListener('submit', (e)=> { 
         e.preventDefault()
         if (e.target.textArea1.value.trim() === '') {
@@ -121,14 +93,6 @@ function renderProperty (property){
 }
 
 
-
-
-// function displayCommentsCard(){
-//     let image = document.querySelector("#viewed")
-//     console.log(image)
-// }
-
-// displayCommentsCard()
 
 // my fetches
 function getPropertiesListed () {
@@ -150,17 +114,7 @@ function listnewProperty (newProperty) {
     .then(data => console.log(data))
 }
 
-function createCommentAPI(commentsObject) {
-    fetch ("http://localhost:3000/recommendations", {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(commentsObject)
-    })
-    .then(res => res.json())
-    .then(data => console.log(data))
-}
+
 
 function updateComment (propertyObj){
     fetch(`http://localhost:3000/properties/${propertyObj.id}`, {
@@ -185,4 +139,3 @@ function deleteProperty (id){
     .then(res => res.json())
     .then(data => console.log(data))
 }
-//createCommentAPI(commentsObject)
